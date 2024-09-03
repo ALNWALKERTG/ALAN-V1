@@ -115,7 +115,40 @@ async def start(client, message):
     if not status:
         return    
     try:
-                    if STREAM_MODE == True:
+        pre, file_id = data.split('_', 1)
+    except:
+        file_id = data
+        pre = ""
+    if data.split("-", 1)[0] == "BATCH":
+        sts = await message.reply("<b>Please wait...</b>")
+        file_id = data.split("-", 1)[1]
+        msgs = BATCH_FILES.get(file_id)
+        if not msgs:
+            file = await client.download_media(file_id)
+            try: 
+                with open(file) as file_data:
+                    msgs=json.loads(file_data.read())
+            except:
+                await sts.edit("FAILED")
+                return await client.send_message(LOG_CHANNEL, "UNABLE TO OPEN FILE.")
+            os.remove(file)
+            BATCH_FILES[file_id] = msgs
+
+        filesarr = []
+        for msg in msgs:
+            title = msg.get("title")
+            size=get_size(int(msg.get("size", 0)))
+            f_caption=msg.get("caption", "")
+            if BATCH_FILE_CAPTION:
+                try:
+                    f_caption=BATCH_FILE_CAPTION.format(mention=message.from_user.mention, file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
+                except Exception as e:
+                    logger.exception(e)
+                    f_caption=f_caption
+            if f_caption is None:
+                f_caption = f"{title}"
+            try:
+                if STREAM_MODE == True:
                     # Create the inline keyboard button with callback_data
                     user_id = message.from_user.id
                     username =  message.from_user.mention 
@@ -208,7 +241,7 @@ async def start(client, message):
         await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")       
         
         return
-                
+                    
     data = message.command[1]
     try:
         pre, file_id = data.split('_', 1)
