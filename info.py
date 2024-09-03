@@ -36,11 +36,11 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_NAME = environ.get('DATABASE_NAME', "ckfiles")
+DATABASE_NAME = environ.get('DATABASE_NAME', "ck5")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'leo_files')
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://files-db1:files-db1@cluster0.d3cap.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://files-db2:files-db2@cluster0.d3eqq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://files-db3:files-db3@cluster0.d28p5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://brother:brother@ck5.z8oui.mongodb.net/?retryWrites=true&w=majority&appName=ck5")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://ck:ck@ck4.0qrsb.mongodb.net/?retryWrites=true&w=majority&appName=ck4")
+DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://bro:bro@ck3.gcmea.mongodb.net/?retryWrites=true&w=majority&appName=ck3")
 DATABASE_URI4 = environ.get('DATABASE_URI4', "mongodb+srv://you:you@ckfiles.lc0uq.mongodb.net/?retryWrites=true&w=majority&appName=ckfiles")
 DATABASE_URI5 = environ.get('DATABASE_URI5', "mongodb+srv://his:his@ckfiles5.wciej.mongodb.net/?retryWrites=true&w=majority&appName=ckfiles5")
                             
