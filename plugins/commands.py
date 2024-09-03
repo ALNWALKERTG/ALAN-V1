@@ -160,10 +160,8 @@ async def start(client, message):
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(button)
-                )
-                filesarr.append(msg)   
-        
-        return
+                )                        
+          return
 
     data = message.command[1]
     try:
