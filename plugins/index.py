@@ -276,7 +276,7 @@ async def index_files_to_db1(lst_msg_id, chat, msg, bot):
                 today = datetime.date.today()
                 now = datetime.datetime.now(tz)
                 ttime = now.strftime("%I:%M:%S %p - %d %b, %Y")
-                if current % 250 == 0:
+                if current % 500 == 0:
                     can = [[InlineKeyboardButton('Cancel', callback_data='index_cancel')]]
                     reply = InlineKeyboardMarkup(can)
                     await asyncio.sleep(1)
