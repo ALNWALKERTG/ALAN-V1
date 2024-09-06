@@ -43,7 +43,7 @@ NON_IMG = """<b>‼️ FILE NOT FOUND ? ‼️
 
 3️⃣ മൂവിക്ക് വേണ്ടി മെസ്സേജ് അയക്കുമ്പോൾ മൂവിയുടെ പേര് ഇറങ്ങിയ വർഷം മാത്രം അയക്കുക..!!
 
-4⃣<i>‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @ARAKAL_THERAVAD_MOVIES_02_bot</b>"""
+4⃣<i>‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @Ck_admins_bot</b>"""
             
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
@@ -155,7 +155,7 @@ async def next_page(bot, query):
             ],
         )
         btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+BYcim_eiF3swMDhl")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/Cinemakalavara_Group")]
         )
 
     try:
@@ -297,7 +297,7 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
         )
     else:
         btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+BYcim_eiF3swMDhl")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/Cinemakalavara_Group")]
         )
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
     temp.SEND_ALL_TEMP[key] = files
@@ -628,7 +628,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         )
     else:
         btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+BYcim_eiF3swMDhl")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/Cinemakalavara_Group")]
         )
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
     temp.SEND_ALL_TEMP[key] = files
@@ -742,7 +742,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         )
     else:
         btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+BYcim_eiF3swMDhl")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/Cinemakalavara_Group")]
         )
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
     temp.SEND_ALL_TEMP[key] = files
@@ -1117,18 +1117,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "commun":
         buttons = [[
-            InlineKeyboardButton("👥 𝗚𝗥𝗢𝗨𝗣 - 𝟭", url=f"https://t.me/+hB6czljfX_diZjNl"),
+            InlineKeyboardButton("👥 𝗚𝗥𝗢𝗨𝗣 - 𝟭", url=f"https://t.me/Cinemakalavara_Group"),
             InlineKeyboardButton("👥 𝗚𝗥𝗢𝗨𝗣 - 𝟮", url=f"https://t.me/+un_DT-l-Td5iODc1")
             ],[
-            InlineKeyboardButton("👥 𝗚𝗥𝗢𝗨𝗣 - 𝟯", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_03"),
-            InlineKeyboardButton("👥 𝗚𝗥𝗢𝗨𝗣 - 𝟰", url=f"https://t.me/ARAKAL_THERAVAD_GROUP_04")
+            InlineKeyboardButton("🖥 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🖥", url="https://t.me/+lnTHXRVenXVkNGRl")
             ],[
-            InlineKeyboardButton("🖥 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🖥", url="https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS")
-            ],[
-            InlineKeyboardButton("⭕️ 𝗚𝗘𝗧 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞𝗦 ⭕️", url="https://t.me/ARAKAL_THERAVAD_GROUP_LINKS")  
+            InlineKeyboardButton("⭕️ 𝗚𝗘𝗧 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞𝗦 ⭕️", url="https://t.me/CinemaKalavaraTG")  
             ],[
             InlineKeyboardButton('🪬 𝑯𝒐𝒎𝒆 🪬', callback_data='start'),
-            InlineKeyboardButton('🗣 𝑨𝒅𝒎𝒊𝒏', url=f"https://t.me/ARAKAL_THERAVAD_MOVIES_02_bot")
+            InlineKeyboardButton('🗣 𝑨𝒅𝒎𝒊𝒏', url=f"https://t.me/Ck_admins_bot")
             ],[
             InlineKeyboardButton('🤷‍♂️ 𝐇𝐎𝐖 𝐓𝐎 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄𝐒 🤷🏻', callback_data='movereq'),
         
@@ -1147,7 +1144,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "movedow":
         buttons = [[
-            InlineKeyboardButton("👥 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/+cFix6RwAWgdkMGNl"),
+            InlineKeyboardButton("👥 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/Cinemakalavara_Group"),
             InlineKeyboardButton('⬅️ 𝑩𝒂𝒄𝒌', callback_data='help')
         ]]
         await client.edit_message_media(
@@ -1163,7 +1160,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "movereqs":
         buttons = [[
-            InlineKeyboardButton("👥 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/+cFix6RwAWgdkMGNl"),
+            InlineKeyboardButton("👥 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/Cinemakalavara_Group"),
             InlineKeyboardButton('⬅️ 𝑩𝒂𝒄𝒌', callback_data='help')
         ]]
         await client.edit_message_media(
@@ -1180,7 +1177,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "movereq":
         buttons = [[
-            InlineKeyboardButton("👥 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/+cFix6RwAWgdkMGNl"),
+            InlineKeyboardButton("👥 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/Cinemakalavara_Group"),
             InlineKeyboardButton('⬅️ 𝑩𝒂𝒄𝒌', callback_data='commun')
         ]]
         await client.edit_message_media(
@@ -1444,7 +1441,7 @@ async def auto_filter(client, msg, spoll=False):
         
     if offset== 0:        
         btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+BYcim_eiF3swMDhl")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/Cinemakalavara_Group")]
         )
     else:
         key = f"{message.chat.id}-{message.id}"
@@ -1455,7 +1452,7 @@ async def auto_filter(client, msg, spoll=False):
             InlineKeyboardButton(text="𝑵𝒆𝒙𝒕 ⏩", callback_data=f"next_{req}_{key}_{offset}")]
        )
         btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+BYcim_eiF3swMDhl")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/Cinemakalavara_Group")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
