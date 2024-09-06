@@ -105,8 +105,8 @@ class script(object):
 ⚙️ Fɪʟᴇ Sɪᴢᴇ :  {file_size}
 
  ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗
- ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/+TGgjhMVmwdUwNWY1> 𝐆𝐑𝐎𝐔𝐏 </a>
- ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS> 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 </a>
+ ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/Cinemakalavara_Group> 𝐆𝐑𝐎𝐔𝐏 </a>
+ ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/+lnTHXRVenXVkNGRl> 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 </a>
  ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/ARAKAL_THERAVAD_GROUP_LINKS> 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 </a>
  ╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝</b>""" 
     
