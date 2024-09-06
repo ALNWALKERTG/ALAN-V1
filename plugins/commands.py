@@ -64,15 +64,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton("🖥 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🖥", url="https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS")
+            InlineKeyboardButton("🖥 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🖥", url="https://t.me/+nQnG1EOZ-KA5ZmU9")
             ],[
-            InlineKeyboardButton('👥 𝑪𝒐𝒎𝒎𝒖𝒏𝒊𝒕𝒚 👥', callback_data='commun'),
-            InlineKeyboardButton('🤖 𝑩𝒐𝒕 𝒊𝒏𝒇𝒐 🤖', callback_data='about')
+            InlineKeyboardButton('👥 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘 👥', callback_data='commun'),
+            InlineKeyboardButton('🤖 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 🤖', callback_data='about')
             ],[
-            InlineKeyboardButton('🎁 𝑺𝒑𝒆𝒄𝒊𝒂𝒍𝒊𝒕𝒚 🎁', callback_data='help'),            
-            InlineKeyboardButton('🪬 𝑨𝒃𝒐𝒖𝒕 🪬', callback_data='botinfo')
+            InlineKeyboardButton('🎁 𝐒𝐏𝐄𝐂𝐈𝐀𝐋𝐈𝐓𝐘 🎁', callback_data='help'),            
+            InlineKeyboardButton('🪬 𝐀𝐁𝐎𝐔𝐓 🪬', callback_data='botinfo')
             ],[
-            InlineKeyboardButton("🖥 𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌 🖥", url='https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==')
+            InlineKeyboardButton("🖥 𝐌𝐎𝐕𝐈𝐄 𝐆𝐑𝐎𝐔𝐏 𝐋𝐈𝐍𝐊 🖥", url='https://t.me/Cinemakalavara_Group')
             
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
@@ -89,15 +89,15 @@ async def start(client, message):
             await ForceSub(client, message)
             return        
         buttons = [[
-            InlineKeyboardButton("🖥 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🖥", url="https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS")
+            InlineKeyboardButton("🖥 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🖥", url="https://t.me/+nQnG1EOZ-KA5ZmU9")
             ],[
-            InlineKeyboardButton('👥 𝑪𝒐𝒎𝒎𝒖𝒏𝒊𝒕𝒚 👥', callback_data='commun'),
-            InlineKeyboardButton('🤖 𝑩𝒐𝒕 𝒊𝒏𝒇𝒐 🤖', callback_data='about')
+            InlineKeyboardButton('👥 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘 👥', callback_data='commun'),
+            InlineKeyboardButton('🤖 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 🤖', callback_data='about')
             ],[
-            InlineKeyboardButton('🎁 𝑺𝒑𝒆𝒄𝒊𝒂𝒍𝒊𝒕𝒚 🎁', callback_data='help'),            
-            InlineKeyboardButton('🪬 𝑨𝒃𝒐𝒖𝒕 🪬', callback_data='botinfo')
+            InlineKeyboardButton('🎁 𝐒𝐏𝐄𝐂𝐈𝐀𝐋𝐈𝐓𝐘 🎁', callback_data='help'),            
+            InlineKeyboardButton('🪬 𝐀𝐁𝐎𝐔𝐓 🪬', callback_data='botinfo')
             ],[
-            InlineKeyboardButton("🖥 𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌 🖥", url='https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==')
+            InlineKeyboardButton("🖥 𝐌𝐎𝐕𝐈𝐄 𝐆𝐑𝐎𝐔𝐏 𝐋𝐈𝐍𝐊 🖥", url='https://t.me/Cinemakalavara_Group')
             
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
