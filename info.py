@@ -24,11 +24,11 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '7256446411:AAHlug2MKleP0mx8sKucF9kUHd8XzxJ
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://envs.sh/bFL.jpg https://envs.sh/btj.jpg https://envs.sh/bt_.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/bba1fba72bed143e8c8be.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/37af06680cbd13176c536.jpg")
+NOR_IMG = environ.get("NOR_IMG", "https://envs.sh/btz.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://envs.sh/bt3.jpg")
 # Admins, Channels & Users
 OWNER_ID = environ.get('OWNER_ID', '2144812475')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2144812475').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2144812475 7040444713').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001911016310').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
