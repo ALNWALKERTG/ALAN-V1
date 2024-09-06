@@ -26,7 +26,7 @@ class script(object):
 
 📡 𝑯𝒐𝒔𝒕𝒆𝒅 𝑶𝒏 : 𝑯𝑬𝑹𝑲𝑼𝑶
 
-👨‍💻 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 : <a href='https://t.me/LeoTGx_7'>ʟᴇᴏ ᠰ ᴛɢ</a>
+👨‍💻 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 : <a href='https://t.me/AlanWalker_TG'>𝙰𝚕𝙰𝚗𝚆𝚊𝙻𝚔𝙴𝚁</a>
 
 👥 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑 : <a href=https://t.me/Cinemakalavara_Group> 𝐆𝐑𝐎𝐔𝐏 </a>
 
