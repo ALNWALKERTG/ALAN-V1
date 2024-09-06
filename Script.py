@@ -107,7 +107,7 @@ class script(object):
  ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗
  ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/Cinemakalavara_Group> 𝐆𝐑𝐎𝐔𝐏 </a>
  ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/+lnTHXRVenXVkNGRl> 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 </a>
- ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/ARAKAL_THERAVAD_GROUP_LINKS> 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 </a>
+ ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/CinemaKalavaraTG> 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 </a>
  ╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝</b>""" 
     
     STATUS_TXT = """📂 𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾𝗌     - <code>{}</code>
