@@ -105,8 +105,8 @@ async def next_page(bot, query):
     
     btn.insert(0, 
         [
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/+5XZ0kmvJwnQwOTY9'),
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌🔺", url='https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==')
+           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/CinemaKalavaraTG'),
+           InlineKeyboardButton("🔺𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏🔺", url='https://t.me/+qiLIMYwCoTcxZGU1')
         ]
     )
     btn.insert(1, 
@@ -274,8 +274,8 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
     BUTTONS[key] = search
     btn.insert(0, 
         [
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/+5XZ0kmvJwnQwOTY9'),
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌🔺", url='https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==')
+           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/CinemaKalavaraTG'),
+           InlineKeyboardButton("🔺𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏🔺", url='https://t.me/+qiLIMYwCoTcxZGU1')
         ]
     )
     btn.insert(1, 
@@ -394,8 +394,8 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         ]
     btn.insert(0, 
         [
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/+5XZ0kmvJwnQwOTY9'),
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌🔺", url='https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==')
+           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/CinemaKalavaraTG'),
+           InlineKeyboardButton("🔺𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏🔺", url='https://t.me/+qiLIMYwCoTcxZGU1')
         ]
     )    
     btn.append([InlineKeyboardButton(text="↭ ʙᴀᴄᴋ ᴛᴏ sᴇᴀsᴏɴ ↭", callback_data=f"fs#{season}#{search}#{key}")])
@@ -496,8 +496,8 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         ]
     btn.insert(0, 
         [
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/+5XZ0kmvJwnQwOTY9'),
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌🔺", url='https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==')
+           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/CinemaKalavaraTG'),
+           InlineKeyboardButton("🔺𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏🔺", url='https://t.me/+qiLIMYwCoTcxZGU1')
         ]
     )
     btn.insert(1, 
@@ -605,8 +605,8 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     BUTTONS[key] = search
     btn.insert(0, 
         [
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/+5XZ0kmvJwnQwOTY9'),
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌🔺", url='https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==')
+           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/CinemaKalavaraTG'),
+           InlineKeyboardButton("🔺𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏🔺", url='https://t.me/+qiLIMYwCoTcxZGU1')
         ]
     )
     btn.insert(1, 
@@ -719,8 +719,8 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     BUTTONS[key] = search
     btn.insert(0, 
         [
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/+5XZ0kmvJwnQwOTY9'),
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌🔺", url='https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==')
+           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/CinemaKalavaraTG'),
+           InlineKeyboardButton("🔺𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏🔺", url='https://t.me/+qiLIMYwCoTcxZGU1')
         ]
     )
     btn.insert(1, 
@@ -1414,8 +1414,8 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/+5XZ0kmvJwnQwOTY9'),
-           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌🔺", url='https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==')
+           InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url='https://t.me/CinemaKalavaraTG'),
+           InlineKeyboardButton("🔺𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏🔺", url='https://t.me/+qiLIMYwCoTcxZGU1')
         ]
     )
     btn.insert(1, 
