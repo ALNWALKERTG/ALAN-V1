@@ -1,4 +1,4 @@
-import asyncio
+import asynci
 lock = asyncio.Lock()
 import re
 import ast
