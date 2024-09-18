@@ -83,6 +83,7 @@ class Bot(Client):
         await app.setup()
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, PORT).start() 
+        
         await restart_index(self)
     
     async def stop(self, *args):
