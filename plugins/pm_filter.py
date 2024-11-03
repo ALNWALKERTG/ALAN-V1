@@ -1489,25 +1489,25 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>📁 𝐇𝐞𝐫𝐞 𝐢𝐬 𝐖𝐡𝐚𝐭 𝐈 𝐅𝐨𝐮𝐧𝐝 𝐈𝐧 𝐌𝐲 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 𝐅𝐨𝐫 𝐘𝐨𝐮𝐫 𝐐𝐮𝐞𝐫𝐲 👇\n\n🍂 𝐌𝐨𝐯𝐢𝐞 𝐍𝐚𝐦𝐞 : {search}</b>"        
+        cap = f"<b>📁 𝐇𝐞𝐫𝐞 𝐢𝐬 𝐖𝐡𝐚𝐭 𝐈 𝐅𝐨𝐮𝐧𝐝 𝐈𝐧 𝐌𝐲 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 𝐅𝐨𝐫 𝐘𝐨𝐮𝐫 𝐐𝐮𝐞𝐫𝐲 👇\n\n🍂 𝐌𝐨𝐯𝐢𝐞 𝐍𝐚𝐦𝐞 : #{search.replace(' ', '_')}</b>"        
     if imdb and imdb.get('poster'):
         try:
-            mat = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
+            mat = await message.reply_video(video=imdb.get('poster'), caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
            # await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_video(video=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
             
           #  await message.delete()
         except Exception as e:
             logger.exception(e)
-            await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_video(video=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             
           #  await message.delete()
     else:
-        await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        await message.reply_video(video=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         
        # await message.delete()
    # if spoll:
