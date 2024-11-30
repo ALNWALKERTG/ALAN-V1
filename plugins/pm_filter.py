@@ -45,21 +45,6 @@ NON_IMG = """<b>‼️ FILE NOT FOUND ? ‼️
 
 4⃣<i>‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @Ck_admins_bot</b>"""
 
-search_btn = [
-    [
-        InlineKeyboardButton('🍁 𝗚𝗢𝗢𝗚𝗟𝗘 🍁', url=f'https://google.com/search')
-    ]
-]
-
-@Client.on_callback_query(filters.regex(r'^search$'))
-async def search_cbq(client: Client, query: CallbackQuery):
-    await client.send_message(
-        chat_id = query.message.chat.id,
-        text = script.SEARCH_TXT,
-        reply_markup = InlineKeyboardMarkup(search_btn),
-        disable_web_page_preview = True,
-        parse_mode=enums.ParseMode.HTML
-    )
 
 @Client.on_message(filters.group|filters.private & filters.text & filters.incoming)
 async def give_filters(client, message):
@@ -1108,11 +1093,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton("🔍 𝖲ᴇᴀʀᴄʜ Hᴇʀᴇ 🔎", callback_data='search')
+            InlineKeyboardButton("🖥 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🖥", url="https://t.me/+nQnG1EOZ-KA5ZmU9")
             ],[
-            InlineKeyboardButton('👥 𝖢ᴏᴍᴍᴜɴɪᴛʏ 𝖫ɪɴᴋᴢ 👥', callback_data='commun'),
+            InlineKeyboardButton('👥 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘 👥', callback_data='commun'),
+            InlineKeyboardButton('🤖 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 🤖', callback_data='about')
             ],[
-            InlineKeyboardButton("🎬 𝖮ᴛᴛ 𝖴ᴘᴅᴀᴛᴀᴇꜱ 𝖢ʜᴀɴɴᴇʟ 🎬", url='https://t.me/+EcKqKBOrLHE3YTZl')            
+            InlineKeyboardButton('🎁 𝐒𝐏𝐄𝐂𝐈𝐀𝐋𝐈𝐓𝐘 🎁', callback_data='help'),            
+            InlineKeyboardButton('🪬 𝐀𝐁𝐎𝐔𝐓 🪬', callback_data='botinfo')
+            ],[
+            InlineKeyboardButton("🖥 𝐌𝐎𝐕𝐈𝐄 𝐆𝐑𝐎𝐔𝐏 𝐋𝐈𝐍𝐊 🖥", url='https://t.me/Cinemakalavara_Group')            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
