@@ -44,7 +44,22 @@ NON_IMG = """<b>‼️ FILE NOT FOUND ? ‼️
 3️⃣ മൂവിക്ക് വേണ്ടി മെസ്സേജ് അയക്കുമ്പോൾ മൂവിയുടെ പേര് ഇറങ്ങിയ വർഷം മാത്രം അയക്കുക..!!
 
 4⃣<i>‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @Ck_admins_bot</b>"""
-            
+
+search_btn = [
+    [
+        InlineKeyboardButton('🍁 𝗚𝗢𝗢𝗚𝗟𝗘 🍁', url=f'https://google.com/search')
+    ]
+]
+
+@Client.on_callback_query(filters.regex(r'^search$'))
+async def search_cbq(client: Client, query: CallbackQuery):
+    await client.send_message(
+        chat_id = query.message.chat.id,
+        text = SEARCH_TXT,
+        reply_markup = InlineKeyboardMarkup(search_btn),
+        disable_web_page_preview = True,
+        parse_mode=enums.ParseMode.HTML
+    )
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filters(client, message):
