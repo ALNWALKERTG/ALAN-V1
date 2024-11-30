@@ -55,7 +55,7 @@ search_btn = [
 async def search_cbq(client: Client, query: CallbackQuery):
     await client.send_message(
         chat_id = query.message.chat.id,
-        text = SEARCH_TXT,
+        text = script.SEARCH_TXT,
         reply_markup = InlineKeyboardMarkup(search_btn),
         disable_web_page_preview = True,
         parse_mode=enums.ParseMode.HTML
