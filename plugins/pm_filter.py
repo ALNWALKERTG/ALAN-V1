@@ -451,9 +451,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     req = query.from_user.id
     chat_id = query.message.chat.id
     message = query.message
-    if query.message.reply_to_message and query.message.reply_to_message.from_user:
-    if int(req) not in [(unavailable), 0]:
-         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
+    if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
         return await query.answer(
             f"⚠️ ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
             show_alert=True,
@@ -472,7 +470,6 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     if not files:
         await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
         return
-
     settings = await get_settings(message.chat.id)
     if settings['button']:
         btn = [
