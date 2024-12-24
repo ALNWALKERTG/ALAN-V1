@@ -129,7 +129,5 @@ class Bot(Client):
                 yield message
                 current += 1
 
-if name == "main":
-    app = Bot()
-    app.run()
-    
+app = Bot()
+app.run()
