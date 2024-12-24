@@ -46,7 +46,7 @@ async def showid(client, message):
 
 @Client.on_message(filters.command('status') & filters.user(ADMINS))
 async def get_stats(bot, message):
-    rju = await message.reply('👀')
+    rju = await message.reply('⚡')
     tot1 = await Media2.count_documents()
     tot2 = await Media3.count_documents()
     tot3 = await Media4.count_documents()
