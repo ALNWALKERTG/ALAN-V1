@@ -41,7 +41,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'leo_files')
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://pcmovies:pcmovies@cluster0.4vv9ebl.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Renamebotv6:Renamebotv6@cluster0.xuqjwfh.mongodb.net/")
 DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://Nazriya:Nazriya@cluster0.tkpcb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI4 = environ.get('DATABASE_URI4', "mongodb+srv://Natasha:Natasha@cluster0.7cq5gju.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI4 = environ.get('DATABASE_URI4', "mongodb+srv://Leachv2:Leachv2@cluster0.4unag2e.mongodb.net/")
 DATABASE_URI5 = environ.get('DATABASE_URI5', "mongodb+srv://Vaishnavi:Vaishnavi@cluster0.fukrr7p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
                             
 # FSUB
