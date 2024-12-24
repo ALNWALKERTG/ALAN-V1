@@ -18,18 +18,31 @@ from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from database.ia_filterdb import Media2, Media3, Media4, Media5
 from database.users_chats_db import db
-from database.join_reqs import JoinReqs
 from info import *
 from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
-
+from plugins.commands import restarti
 from aiohttp import web
 from plugins import web_server
 from plugins.index import index_files_to_db, incol
-PORT = environ.get("PORT", "8080")
+PORT = environ.get("PORT", "8050")
 name = "main"
 
+async def restart_bot(bot):
+    progress_document = restarti.find_one({"_id": "frestart"})
+    if progress_document:
+        last_restart = progress_document.get("restart")
+        if last_restart == "on":
+            restarti.update_one(
+                {"_id": "frestart"},
+                {"$set": {"restart": "off"}},
+                upsert=True
+            )
+            os.execl(sys.executable, sys.executable, "bot.py")
+        else:
+            return 
+            
 async def restart_index(bot):
     progress_document = incol.find_one({"_id": "index_progress"})
     if progress_document:
@@ -59,17 +72,29 @@ class Bot(Client):
         temp.BANNED_USERS = b_users
         temp.BANNED_CHATS = b_chats
         await super().start()        
-        if REQ_CHANNEL == None:
+        if REQ_CHANNEL1 == None:
             with open("./dynamic.env", "wt+") as f:
-                req = await JoinReqs().get_fsub_chat()
+                req = await db.get_fsub_chat()                
                 if req is None:
                     req = False
                 else:
-                    req = req['chat_id']
-                f.write(f"REQ_CHANNEL={req}\n")
-            logging.info("Loading REQ_CHANNEL from database...")
+                    req = req['chat_id']                   
+                f.write(f"REQ_CHANNEL1={req}\n")
+                
+            logging.info("Loading REQ_CHANNEL from database...") 
             os.execl(sys.executable, sys.executable, "bot.py")
-            return        
+            return 
+        if REQ_CHANNEL2 == None:
+            with open("./dynamic.env", "wt+") as f:
+                req2 = await db.get_fsub_chat2()
+                if req2 is None:
+                    req2 = False
+                else:
+                    req2 = req2['chat_id']
+                f.write(f"REQ_CHANNEL2={req2}\n")
+            logging.info("Loading REQ_CHANNEL...") 
+            os.execl(sys.executable, sys.executable, "bot.py")
+            return 
         me = await self.get_me()
         temp.ME = me.id
         temp.U_NAME = me.username
@@ -82,10 +107,24 @@ class Bot(Client):
         app = web.AppRunner(await web_server())
         await app.setup()
         bind_address = "0.0.0.0"
-        await web.TCPSite(app, bind_address, PORT).start() 
-        
+        await web.TCPSite(app, bind_address, PORT).start()       
+
         await restart_index(self)
-    
+        if REQ_CHANNEL1 != False:           
+            try:
+                _link = await self.create_chat_invite_link(chat_id=int(REQ_CHANNEL1), creates_join_request=True)
+                self.req_link1 = _link.invite_link
+            except Exception as e:
+                logging.info(f"Make Sure REQ_CHANNEL 1 ID is correct or {e}")
+        if REQ_CHANNEL2 != False:
+            try:
+                _link = await self.create_chat_invite_link(chat_id=int(REQ_CHANNEL2), creates_join_request=True)
+                self.req_link2 = _link.invite_link
+            except Exception as e:
+                logging.info(f"Make Sure REQ_CHANNEL 2 ID is correct or {e}")
+
+        await restart_bot(self)
+        
     async def stop(self, *args):
         await super().stop()
         logging.info("Bot stopped. Bye.")
@@ -129,5 +168,7 @@ class Bot(Client):
                 yield message
                 current += 1
 
-app = Bot()
-app.run()
+if name == "main":
+    app = Bot()
+    app.run()
+    
