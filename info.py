@@ -2,6 +2,7 @@ import re
 from os import environ
 from dotenv import load_dotenv
 from Script import script 
+from pyrogram import utils as pyroutils
 
 load_dotenv("./dynamic.env", override=True, encoding="utf-8")
 
@@ -34,6 +35,9 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
+
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
 
 # MongoDB information
 DATABASE_NAME = environ.get('DATABASE_NAME', "pcmovies")
