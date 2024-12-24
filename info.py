@@ -18,7 +18,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '7679954'))
 API_HASH = environ.get('API_HASH', '4af51af8f1a8b06ca2b076370ba93fba')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7256446411:AAHlAuexiHY9lOxomwFPymrWKiGP4Jaj5-M')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -36,13 +36,13 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_NAME = environ.get('DATABASE_NAME', "ck5")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'leo_files')
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://brother:brother@ck5.z8oui.mongodb.net/?retryWrites=true&w=majority&appName=ck5")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://ck:ck@ck4.0qrsb.mongodb.net/?retryWrites=true&w=majority&appName=ck4")
-DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://bro:bro@ck3.gcmea.mongodb.net/?retryWrites=true&w=majority&appName=ck3")
-DATABASE_URI4 = environ.get('DATABASE_URI4', "mongodb+srv://you:you@ckfiles.lc0uq.mongodb.net/?retryWrites=true&w=majority&appName=ckfiles")
-DATABASE_URI5 = environ.get('DATABASE_URI5', "mongodb+srv://his:his@ckfiles5.wciej.mongodb.net/?retryWrites=true&w=majority&appName=ckfiles5")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+DATABASE_URI3 = environ.get('DATABASE_URI3', "")
+DATABASE_URI4 = environ.get('DATABASE_URI4', "")
+DATABASE_URI5 = environ.get('DATABASE_URI5', "")
                             
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -53,7 +53,7 @@ REQ_CHANNEL = (int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002162564179'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MOVIES_ZILAA')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', 'False')), False)
 IMDB = is_enabled((environ.get('IMDB', 'False')), False)
