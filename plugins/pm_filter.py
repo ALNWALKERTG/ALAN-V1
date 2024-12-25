@@ -86,7 +86,6 @@ async def next_page(bot, query):
             for file in files
         ]
     
-    
     if 0 < offset < 10:
         off_set = 0
     elif offset == 0:
@@ -119,8 +118,7 @@ async def next_page(bot, query):
     except MessageNotModified:
         pass
     await query.answer()
-    temp.SEND_ALL_TEMP[key] = files
-
+    
 @Client.on_callback_query(filters.regex(r"^spolling"))
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
@@ -626,7 +624,7 @@ async def auto_filter(client, msg, spoll=False):
     
     if offset == 0:
         btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/Cinemakalavara_Group")]
+            [InlineKeyboardButton(text="1/1", callback_data="pages")]
         )
     else:
         key = f"{message.chat.id}-{message.id}"
