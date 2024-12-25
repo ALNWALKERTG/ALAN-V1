@@ -626,7 +626,7 @@ async def auto_filter(client, msg, spoll=False):
     
     if offset == 0:
         btn.append(
-            [InlineKeyboardButton(text="1/1", callback_data="pages")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/Cinemakalavara_Group")]
         )
     else:
         key = f"{message.chat.id}-{message.id}"
