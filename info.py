@@ -19,7 +19,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '7679954'))
 API_HASH = environ.get('API_HASH', '4af51af8f1a8b06ca2b076370ba93fba')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6728153756:AAE4OsSX-qLaQSCCzkLCLkavySp6oj_FBkk')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7256446411:AAHlAuexiHY9lOxomwFPymrWKiGP4Jaj5-M')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -40,13 +40,13 @@ pyroutils.MIN_CHAT_ID = -999999999999
 pyroutils.MIN_CHANNEL_ID = -100999999999999
 
 # MongoDB information
-DATABASE_NAME = environ.get('DATABASE_NAME', "pcmovies")
+DATABASE_NAME = environ.get('DATABASE_NAME', "ck5")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'leo_files')
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://pcmovies:pcmovies@cluster0.4vv9ebl.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Renamebotv6:Renamebotv6@cluster0.xuqjwfh.mongodb.net/")
-DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://Nazriya:Nazriya@cluster0.tkpcb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI4 = environ.get('DATABASE_URI4', "mongodb+srv://Leachv2:Leachv2@cluster0.4unag2e.mongodb.net/")
-DATABASE_URI5 = environ.get('DATABASE_URI5', "mongodb+srv://Vaishnavi:Vaishnavi@cluster0.fukrr7p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://brother:brother@ck5.z8oui.mongodb.net/?retryWrites=true&w=majority&appName=ck5")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://ck:ck@ck4.0qrsb.mongodb.net/?retryWrites=true&w=majority&appName=ck4")
+DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://bro:bro@ck3.gcmea.mongodb.net/?retryWrites=true&w=majority&appName=ck3")
+DATABASE_URI4 = environ.get('DATABASE_URI4', "mongodb+srv://you:you@ckfiles.lc0uq.mongodb.net/?retryWrites=true&w=majority&appName=ckfiles")
+DATABASE_URI5 = environ.get('DATABASE_URI5', "mongodb+srv://his:his@ckfiles5.wciej.mongodb.net/?retryWrites=true&w=majority&appName=ckfiles5")                            
                             
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
