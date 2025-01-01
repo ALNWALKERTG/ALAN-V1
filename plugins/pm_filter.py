@@ -117,7 +117,6 @@ async def next_page(bot, query):
         )
     except MessageNotModified:
         pass
-    await query.answer()
     
 @Client.on_callback_query(filters.regex(r"^spolling"))
 async def advantage_spoll_choker(bot, query):
